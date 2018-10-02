@@ -1,0 +1,2 @@
+time cat /tmp/bot_list | cargo run --release > /tmp/asn
+cat /tmp/asn | sed 's,.*: ,,' | sort -u
