@@ -1,5 +1,5 @@
-time cat /tmp/bot_list | cargo run --release > /tmp/asn
+time cat /tmp/bot_list | cargo run --release >! /tmp/asn
 cat /tmp/asn | sed 's,.*: ,,' | sort -u
 cat /tmp/asn.china | sed 's,.*: ,,' | sort -u
 
-cat /tmp/asn.china | sed -e "s,.*: \([^ ]*\) > ,'\1'\, # ," | sort -u
+cat /tmp/asn | sed -e "s,.*: \([^ ]*\) > ,'\1'\, # ," | sort -u
