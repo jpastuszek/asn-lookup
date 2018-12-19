@@ -1,5 +1,5 @@
-This program will load ASN database from https://iptoasn.com/ and cache it for quick access later on.
-Provided list of IPs to standard input (can be CSV format) or via command line parameters it will try to match ASN network address and provide it in format that is suited for inclusion in Puppet config file.
+This program will load ASN database from file that can be downloaded from https://iptoasn.com/ and cache it for quick access later on.
+Provided list of IPs to standard input (can be in CSV format) or via command line arguments it will try to match ASN network address and provide it in format that is suited for inclusion in Puppet config file.
 
 Example usage:
 ```sh
